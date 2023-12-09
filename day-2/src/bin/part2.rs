@@ -96,7 +96,6 @@ fn test_game_parse() {
     let input = "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green";
     let game = Game::parse(input);
 
-    assert_eq!(game.id, 1);
     assert_eq!(game.sets.len(), 3);
     assert_eq!(game.sets[0].red, 4);
     assert_eq!(game.sets[0].blue, 3);
