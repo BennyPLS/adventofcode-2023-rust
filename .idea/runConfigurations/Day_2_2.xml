@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Day 2.2" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+  <configuration default="false" name="Day 2.2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" folderName="Day 2">
     <option name="command" value="run --package day-2 --bin part2" />
     <option name="workingDirectory" value="file://$PROJECT_DIR$/day-2" />
     <option name="emulateTerminal" value="true" />
