@@ -51,12 +51,9 @@ fn first_number(line: &str) -> char {
         }
     }
 
-    let chars: Vec<char> = line.chars().collect();
-    for i in 0..first_text {
-        if chars[i].is_digit(10) {
-            char = chars[i];
-            break;
-        }
+    let first_number = line[..first_text].chars().find(is_number);
+    if let Some(first_number) = first_number {
+        char = first_number;
     }
 
     return char;
@@ -75,15 +72,16 @@ fn last_number(line: &str) -> char {
         }
     }
 
-    let chars: Vec<char> = line.chars().collect();
-    for i in (first_text..line.len()).rev() {
-        if chars[i].is_digit(10) {
-            char = chars[i];
-            break;
-        }
+    let first_number = line[first_text..].chars().rfind(is_number);
+    if let Some(first_number) = first_number {
+        char = first_number;
     }
 
     return char;
+}
+
+fn is_number(c: &char) -> bool {
+    return c.is_digit(10);
 }
 
 #[test]
