@@ -118,7 +118,7 @@ fn test_min_playable_set() {
 }
 
 fn main() {
-    let content = include_str!("./input2.txt");
+    let content = include_str!("input.txt");
 
     println!(
         "Sum of min viable power : {}",

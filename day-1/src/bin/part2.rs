@@ -5,7 +5,7 @@ const NUMBERS: [&str; 9] = [
 ];
 
 fn main() {
-    let content = include_str!("./input2.txt");
+    let content = include_str!("input.txt");
     let result = calibrate(content);
     println!("Calibration: {}", result)
 }

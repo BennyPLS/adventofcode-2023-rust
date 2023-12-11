@@ -66,7 +66,7 @@ impl PartNumber {
 
 #[test]
 fn part_number_is_valid_test() {
-    let grid = create_grid(include_str!("./input1.txt"));
+    let grid = create_grid(include_str!("input.txt"));
 
     let part_number_true = PartNumber {
         number: 426,
@@ -149,7 +149,7 @@ fn sum_valid_part_numbers_test() {
 }
 
 fn main() {
-    let grid = create_grid(include_str!("./input1.txt"));
+    let grid = create_grid(include_str!("input.txt"));
     let part_numbers = scan_grid(&grid);
     let sum = sum_valid_part_numbers(&part_numbers, &grid);
 

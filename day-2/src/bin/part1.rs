@@ -107,7 +107,7 @@ fn test_game_parse() {
 }
 
 fn main() {
-    let content = include_str!("./input1.txt");
+    let content = include_str!("input.txt");
 
     println!("Sum of valid games : {}", sum_valid_games(content));
 }

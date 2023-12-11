@@ -1,7 +1,7 @@
 use std::iter::Iterator;
 
 fn main() {
-    let result = calibrate(include_str!("./input1.txt"));
+    let result = calibrate(include_str!("input.txt"));
 
     println!("Calibration: {}", result);
 }

@@ -193,7 +193,7 @@ fn sum_gear_ratios_test() {
 }
 
 fn main() {
-    let grid = create_grid(include_str!("./input2.txt"));
+    let grid = create_grid(include_str!("input.txt"));
     let gears = get_gears(&grid);
     let sum = sum_gear_ratios(&gears);
 
